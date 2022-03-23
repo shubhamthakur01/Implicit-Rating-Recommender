@@ -1,7 +1,7 @@
 ## Implicit Rating Recommender
 
 In this problem statement, we wish to predict if the user is going to like a certain item based on his behavior. \
-It is different from the Explicit case as:
+It is different from the Explicit case as:\
 	1. The training data, we don't have any negative feedback i.e all the samples are positive examples.
 	2. No level of preference. Ex 1("totally dislike") vs 10("really like")
 	3. More available and easier to get
@@ -27,9 +27,9 @@ The idea behind these sampling approaches is quite intuitive:
 
 Matrix factorization is the way to identify the relation between items' and users' entities. The utility matrix can be written as:
 
-Y = U*V
+`Y = U*V`
 
-where Y is the utility matrix. Here is a small representation of how its looks. 
+where Y is the utility matrix. U and V are the trained user and item embedding respectively. Here is a small representation of how its looks. 
 
 <img src="images/MF.png" width="600" height="320" /> 
 
